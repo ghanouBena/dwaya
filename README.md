@@ -1,5 +1,6 @@
 # Welcome to the DWAYA site for management of medicaments
 Follow this step to run this site
+
 1- move the folder of dwaya to the document root where your web server is running
 
 2- import one of the sql files in mysql server database or using phpmyamdin
