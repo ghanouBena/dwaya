@@ -1,0 +1,10 @@
+Options -MultiViews 
+RewriteEngine On
+
+# comment the following line if your public folder is the web server's root 
+RewriteBase /
+##If request match a not existing file, continue:
+RewriteCond %{REQUEST_FILENAME} !-d
+##If request match a not existing directory, continue:
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?url=$1 [L,QSA]
